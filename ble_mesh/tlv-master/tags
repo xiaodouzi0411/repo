@@ -1,0 +1,42 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AddTlv	TLVPackage.cpp	/^int TLVPackage::AddTlv(Tlv_t *tlv,Tlv_t *child_tlv)$/;"	f	class:TLVPackage
+BUFF_INCREMENT_SIZE	TLVEntity.h	11;"	d
+BasicValGet	TLVPackage.h	/^	template<class T> static T BasicValGet(Tlv_t *tlv)$/;"	f	class:TLVPackage
+BasicValSet	TLVPackage.h	/^	template<class T> static void BasicValSet(Tlv_t *tlv, T par)$/;"	f	class:TLVPackage
+CONSTRUCT_ENCODED_MASK	TLVEntity.h	8;"	d
+Construct	TLVPackage.cpp	/^int TLVPackage::Construct(const uint8_t *buffer, uint32_t bufferLength,$/;"	f	class:TLVPackage
+Construct	TLVPackage.cpp	/^int TLVPackage::Construct(const uint8_t *buffer,uint32_t buff_len,$/;"	f	class:TLVPackage
+CopyBuff2TlvValue	TLVPackage.cpp	/^int TLVPackage::CopyBuff2TlvValue(const void *buffer,Tlv_t *tlv)$/;"	f	class:TLVPackage
+CopyTlvValue2Buff	TLVPackage.cpp	/^uint8_t* TLVPackage::CopyTlvValue2Buff(const TLVEntity *tlv,uint8_t *buffer)$/;"	f	class:TLVPackage
+FOLLOWS_LEN_BYTE_MASK	TLVEntity.h	10;"	d
+GetLength	TLVPackage.cpp	/^uint32_t TLVPackage::GetLength(const uint8_t *data)$/;"	f	class:TLVPackage
+GetTlvHeader	TLVPackage.cpp	/^const uint8_t* TLVPackage::GetTlvHeader(const uint8_t* buffer, uint32_t length, Tlv_t *tlv)$/;"	f	class:TLVPackage
+MAX_TLVOBJ_SIZE	TLVPackage.h	7;"	d
+Parse	TLVPackage.cpp	/^int TLVPackage::Parse(const TLVEntity *tlvs, uint32_t entitySize,$/;"	f	class:TLVPackage
+Parse	TLVPackage.cpp	/^int TLVPackage::Parse(const TLVEntity *tlvs, uint8_t *buffer, uint32_t &bufferLength)$/;"	f	class:TLVPackage
+PrintBufferHex	test.cpp	/^static void PrintBufferHex(const uint8_t* buff, size_t len)$/;"	f	file:
+SINGLE_TAG_BYTE_MASK	TLVEntity.h	9;"	d
+SetLength	TLVPackage.cpp	/^uint8_t* TLVPackage::SetLength(uint32_t len, uint8_t *buffer)$/;"	f	class:TLVPackage
+StringValSet	TLVPackage.cpp	/^int TLVPackage::StringValSet(Tlv_t *tlv, void *buffer, uint32_t len)$/;"	f	class:TLVPackage
+TLVEntity	TLVEntity.h	/^	TLVEntity(){tag = 0;length = 0;buff_length = BUFF_INCREMENT_SIZE;value = (uint8_t*)malloc(BUFF_INCREMENT_SIZE);}$/;"	f	struct:TLVEntity
+TLVEntity	TLVEntity.h	/^	TLVEntity(uint16_t tag, uint8_t *value, uint32_t value_len)$/;"	f	struct:TLVEntity
+TLVEntity	TLVEntity.h	/^struct TLVEntity {$/;"	s
+TLVPackage	TLVPackage.h	/^class TLVPackage$/;"	c
+TLV_STRING_TAG	TLVPackage.h	9;"	d
+TlvAddData	TLVPackage.cpp	/^int TLVPackage::TlvAddData(Tlv_t *tlv, uint16_t tag, uint8_t *value, uint32_t value_len)$/;"	f	class:TLVPackage
+Tlv_Debug	TLVPackage.cpp	/^void TLVPackage::Tlv_Debug(Tlv_t* tlv, int tlv_size)$/;"	f	class:TLVPackage
+Tlv_t	TLVEntity.h	/^typedef struct TLVEntity Tlv_t;$/;"	t	typeref:struct:TLVEntity
+__TLVENTITY_H__	TLVEntity.h	2;"	d
+__TLVPACKAGE_H__	TLVPackage.h	2;"	d
+buff_length	TLVEntity.h	/^	uint32_t buff_length;		\/\/incase value overfllow$/;"	m	struct:TLVEntity
+length	TLVEntity.h	/^	uint32_t length;		\/\/Data Length$/;"	m	struct:TLVEntity
+main	test.cpp	/^int main()$/;"	f
+tag	TLVEntity.h	/^	uint16_t tag;			\/\/Tag$/;"	m	struct:TLVEntity
+tlv1Data	test.cpp	/^uint8_t tlv1Data[] = $/;"	v
+value	TLVEntity.h	/^	uint8_t *value;			\/\/Data$/;"	m	struct:TLVEntity
+~TLVEntity	TLVEntity.h	/^	virtual ~TLVEntity() {free(value);}$/;"	f	struct:TLVEntity
